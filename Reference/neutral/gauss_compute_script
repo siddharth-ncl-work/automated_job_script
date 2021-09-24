@@ -1,10 +1,10 @@
 #! /bin/bash
 #PBS -l nodes=compute-0-0:ppn=16
-#PBS -N opt_C6H5_R2_neutral
+#PBS -N opt_2CH3N_R2_neutral
 #PBS -j oe
 cd $PBS_O_WORKDIR
 
-job=C6H5_R2_neutral
+job=2CH3N_R2_neutral
 
 cat $PBS_NODEFILE > pbsnodes
 mkdir /tmp/$job
