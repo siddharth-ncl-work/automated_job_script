@@ -1,0 +1,1 @@
+nohup python -u job_script_sp_anion.py > output.log &
