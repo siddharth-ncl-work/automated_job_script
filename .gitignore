@@ -3,3 +3,7 @@
 *.com
 *.log
 *.chk
+pbsnodes
+*.o*
+PROGRESS
+test.py
