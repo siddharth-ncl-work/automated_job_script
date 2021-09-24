@@ -81,8 +81,8 @@ def waitAndCheckJob(job):
 		time.sleep(interval)
 		print('\tRUNNING -',end='\r')
 		time.sleep(interval)
-		"""
 		print('\tRUNNING \\',end='\r')
+		"""
 		progress_df.loc[progress_df['JOB']==job,'STATUS']='RUNNING'
 		progress_df.to_csv('PROGRESS',sep='\t',index=False)
 		time.sleep(interval)
