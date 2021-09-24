@@ -36,7 +36,7 @@ def prepareJob(job):
 	coords='\n'.join(output.stdout.strip().split('\n')[2:])
 	assert num_atoms==len(coords.split('\n')),'obabel error'
 	input_file_content='%Mem=4800MB\n'\
-					   '%nprocshared=12\n'\
+					   '%nprocshared=16\n'\
                       f'%chk={job}.chk\n'\
                        '# opt freq b3lyp/6-31+g(d,p) scf=xqc\n'\
                        '\n'\
