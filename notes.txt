@@ -1,0 +1,18 @@
+Data Compilation:
+
+A.	from opt+freq//B3LYP
+	G_therm (Gas-B3LYP)
+	grep "Thermal correction to Gibbs free Energy="
+
+B. 	From single point/M062X (E_sol)
+	"SCF Done"
+
+C.	G_sol = G_therm (Gas-B3LYP) + E_sol (M062X)
+	Hartree
+
+D.	G_sol (kcal/mol) = G_sol (Hartree) * 627.509
+
+E. 	dG_sol = 70.43563 + [G_sol (anion) - G_sol (Neutral)] kcal/mol
+
+F.	E0 = E0_ref - (dG_sol/nF)
+	   = -1.74 - (dG_sol/23.061)
